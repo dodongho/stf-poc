@@ -1,6 +1,6 @@
-FROM openstf/stf:latest
+FROM dodongho/stts-stf:latest
 
 USER root
-RUN mkdir /data && chown stf:stf /data
+RUN mkdir -p /app/data && chown stf:stf /app/data
 USER stf
 VOLUME ["/data"]
