@@ -21,7 +21,7 @@ services:
       - websocket
       - api
   adb:
-    image: dodongho/stts-adb:r28.0.1
+    image: dodongho/stts-adb:r29.0.3
     restart: unless-stopped
     privileged: true
     volumes:
