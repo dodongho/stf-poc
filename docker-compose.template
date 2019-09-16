@@ -21,7 +21,7 @@ services:
       - websocket
       - api
   adb:
-    image: dodongho/stts-adb:r29.0.3
+    image: docker.rt.sec.samsung.net/stts/stts-adb:r29.0.3
     restart: unless-stopped
     privileged: true
     volumes:
@@ -29,7 +29,7 @@ services:
     ports:
       - 5037:5037
   rethinkdb:
-    image: rethinkdb:2.3
+    image: docker-remote.rt.sec.samsung.net/rethinkdb:2.3
     restart: unless-stopped
     volumes:
       - rethinkdb:/data
